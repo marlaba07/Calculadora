@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Resultado from './Resultado'
+import { operaciones } from '../helpers/operaciones'
+
 
 const NumberInput = () => {
 
@@ -9,19 +11,7 @@ const NumberInput = () => {
         numero2: 0,
     })
 
-    const { numero1, numero2 } = numeros;
-
-    const handleChange = (e) => {
-        setNumeros({
-            ...numeros,
-            [e.target.name]: parseFloat(e.target.value),
-        })
-    }
-
-    const sumar = () => numero1 + numero2
-    const restar = () => numero1 - numero2
-    const multiplicar = () => numero1 * numero2
-    const dividir = () => numero1 / numero2
+    const { handleChange, sumar, restar, multiplicar, dividir, numero1, numero2 } = operaciones(numeros, setNumeros);
 
     return (
         <>
