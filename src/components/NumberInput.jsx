@@ -23,7 +23,6 @@ const NumberInput = () => {
     const multiplicar = () => numero1 * numero2
     const dividir = () => numero1 / numero2
 
-
     return (
         <>
             <label>
