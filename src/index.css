@@ -5,9 +5,77 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(#371d66d3, #de91e5);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor {
+  border: 2px solid rgb(34, 11, 11);
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0,0,0, .6);
+}
+
+label{
+  color: white;
+  font-size: 20px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+h1{
+  color: rgb(19, 247, 179);
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-shadow: 2px 2px rgb(4, 110, 79);
+}
+
+p{
+  color: rgba(128, 128, 128, 0.74);
+  position: relative;
+  top: 15px;
+}
+
+#suma, #resta, #multiplicacion, #division{
+  color: white;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+#suma{
+  position: relative;
+  top: 2rem;
+  right: 10rem;
+}
+
+#resta{
+  position: relative;
+  top: 3rem;
+  right: 10rem;
+}
+
+#multiplicacion{
+  position: relative;
+  top: -0.3rem;
+  left: 10rem;
+}
+
+#division{
+  position: relative;
+  top: -8.2rem;
+  left: 10rem;
 }

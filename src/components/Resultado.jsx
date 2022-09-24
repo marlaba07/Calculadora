@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const Resultado = ({ operacion, calculo }) => {
     return (
-        <div>
+        <div id="dis">
             <br />
             <span>
                 {operacion}: {calculo}

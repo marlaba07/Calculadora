@@ -7,6 +7,11 @@
   pointer-events: none;
 }
 
+.contenedor {
+  border: 30px;
+  border-radius: 10px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -36,3 +41,5 @@
     transform: rotate(360deg);
   }
 }
+
+

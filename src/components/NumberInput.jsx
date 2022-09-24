@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import Resultado from './Resultado'
 import { operaciones } from '../helpers/operaciones'
 
-
 const NumberInput = () => {
 
     const [numeros, setNumeros] = useState({
@@ -15,19 +14,33 @@ const NumberInput = () => {
 
     return (
         <>
-            <label>
-                Numero 1: {" "}
-                <input name="numero1" value={numero1} onChange={handleChange} type="number" />
+            <label className="mx-5">
+                Primer número {" "}
+                <input name="numero1" value={numero1} onChange={handleChange} type="number" className="form-control" />
             </label>
-            <label>
-                Numero 2: {" "}
-                <input name="numero2" value={numero2} onChange={handleChange} type="number" />
+            <label className="mx-5">
+                Segundo número {" "}
+                <input name="numero2" value={numero2} onChange={handleChange} type="number" className="form-control" />
             </label>
 
-            <Resultado operacion="Suma" calculo={sumar()} />
-            <Resultado operacion="Resta" calculo={restar()} />
-            <Resultado operacion="Multiplicacion" calculo={multiplicar()} />
-            <Resultado operacion="Division" calculo={dividir()} />
+            <div id='suma'>
+                <Resultado operacion="Suma" calculo={sumar()} />
+            </div>
+            <div id='resta'>
+                <Resultado operacion="Resta" calculo={restar()} />
+            </div>
+            <div id='multiplicacion'>
+                <Resultado operacion="Multiplicacion" calculo={multiplicar()} />
+            </div>
+            <div id='division'>
+                <Resultado operacion="Division" calculo={dividir()} />
+            </div>
+
+            <p>
+                Nota: Cálculadora dinámica hecha con React.
+                <br />
+                El primer número hará su cálculo sobre el segundo.
+            </p>
         </>
     )
 }
