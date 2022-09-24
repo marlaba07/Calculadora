@@ -6,6 +6,6 @@ En el primer número se realizará el cálculo correspondiente por el segundo n�
 
 - HTML5
 - CSS3
-- BootStrap
+- Bootstrap
 - JavaScript | JSX
 - React
