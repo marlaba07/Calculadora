@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import { useState } from 'react';
+import Resultado from './Resultado'
 
 const NumberInput = () => {
-    const [numeros, setNumeros] = useState(0)({
+
+    const [numeros, setNumeros] = useState({
         numero1: 0,
         numero2: 0,
     })
@@ -17,6 +18,12 @@ const NumberInput = () => {
         })
     }
 
+    const sumar = () => numero1 + numero2
+    const restar = () => numero1 - numero2
+    const multiplicar = () => numero1 * numero2
+    const dividir = () => numero1 / numero2
+
+
     return (
         <>
             <label>
@@ -27,6 +34,11 @@ const NumberInput = () => {
                 Numero 2: {" "}
                 <input name="numero2" value={numero2} onChange={handleChange} type="number" />
             </label>
+
+            <Resultado operacion="Suma" calculo={sumar()} />
+            <Resultado operacion="Resta" calculo={restar()} />
+            <Resultado operacion="Multiplicacion" calculo={multiplicar()} />
+            <Resultado operacion="Division" calculo={dividir()} />
         </>
     )
 }
