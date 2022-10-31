@@ -1,4 +1,4 @@
-# Calculadora Dinámica - React 
+# Calculadora Dinámica
 Es una calculadora común, con la diferencia que aparecen los resultados de las distintas operaciones (suma, resta, multiplicación y división) de forma dinámica.
 En el primer número se realizará el cálculo correspondiente por el segundo número. Por ejemplo: el primer número será dividido por el segundo (de esa manera se realizarán todas las operaciones). 
 
@@ -8,4 +8,4 @@ En el primer número se realizará el cálculo correspondiente por el segundo n�
 - CSS3
 - Bootstrap
 - JavaScript | JSX
-- React
+- ReactJS
